@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ログイン</title>
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("pw").value;
+
+      if (password === "1234") {
+        // パスワードが合っていたら移動
+        location.href = "secret.html";
+      } else {
+        alert("パスワードが違います");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <h2>パスワードを入力してください</h2>
+
+  <input type="password" id="pw">
+  <button onclick="checkPassword()">入る</button>
+
+</body>
+</html>
